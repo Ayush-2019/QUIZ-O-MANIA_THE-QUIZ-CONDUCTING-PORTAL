@@ -1,0 +1,34 @@
+<mat-card class="m_t20">
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+
+        <button routerLink="/user-dashboard" mat-list-item>
+            <mat-icon mat-list-icon>home</mat-icon>
+            Home
+        </button>
+        <button mat-list-item [routerLink] = "'/user-dashboard/profile'">
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+            Profile
+        </button>
+
+        <button mat-list-item routerLink = "/user-dashboard/0">
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+            All Quiz
+        </button>
+
+
+        <button mat-list-item [routerLink]="'/user-dashboard/'+c.cid" *ngFor="let c of categories">
+            <mat-icon mat-list-icon>quiz</mat-icon>
+            {{c.title}}
+        </button>
+
+        
+        
+
+
+        <button mat-list-item (click)="logout()">
+            <mat-icon mat-list-icon>logout</mat-icon>
+            Logout
+        </button>
+    </mat-action-list>
+</mat-card>

@@ -1,0 +1,75 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; font-weight: bolder; font-size: xx-large; margin-top: 20px; color: purple;">
+                WELCOME TO PARIKSHA- THE EXAM PORTAL
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m_t20">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title style="margin-left: 500px; font-weight: bolder;">
+                            AUTHORITIES
+                        </mat-card-title>
+                    </mat-card-header>
+
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 style="margin-left: 50px; font-weight: bolder;">ADMIN</h2>
+                                <ul style="font-weight: 900; font-size: 20px;">
+                                    <li>Can Create/View Quiz Categories</li>
+                                    <li>Can Create/View/Update Quiz Details</li>
+                                    <li>Can change quiz status to publish/un-publish quiz</li>
+                                    <li>Can add new Quiz</li>
+                                    <li>Can View/Delete Questions of any quiz</li>
+                                    <li>Total Marks/Questions Count of Quiz changes on adding/deleting question</li>
+                                    <li>Can set marks for each Question</li>
+                                    <li>Can view Quiz Results</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 style="margin-left: 200px; font-weight: bolder;">TEST TAKER</h2>
+                                <ul style="margin-left: 100px;font-weight: 900; font-size: 20px;">
+                                    <li>Can View Own Profile</li>
+                                    <li>Can View Details of All Quiz</li>
+                                    <li>Can View Quiz of specific Category</li>
+                                    <li>Can attempt the published Quiz</li>
+                                    <li>Can see remaining time during Quiz</li>
+                                    <li>Should Complete Quiz in Specific Time</li>
+                                    <li>Quiz Submits on submitting or when Time ends</li>
+                                    <li>Can See Quiz Result after Completion</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m_t20">
+                <mat-card>
+
+                    <mat-card-content>
+                        <div class="row">
+                            <div [routerLink]="'/login'" class="col-md-8 m_t20" style="font-weight: bolder; font-size: 50px; color: blueviolet;">
+                                <p>LOGIN <mat-icon>login</mat-icon></p>
+                            </div>
+                            <div [routerLink]="'/signup'" class="col-md-4 m_t20" style=" font-weight: bolder; font-size: 50px; color: brown;">
+                                <p>REGISTER <mat-icon>assignment</mat-icon></p>
+                            </div>
+                            
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

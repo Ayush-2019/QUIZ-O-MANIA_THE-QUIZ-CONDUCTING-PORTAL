@@ -1,0 +1,21 @@
+<mat-card>
+    <h1>Add new Category</h1>
+
+    <mat-card-content>
+        <form (ngSubmit)="formSubmit()">
+            <mat-form-field class="w60" appearance="outline">
+                <mat-label>Title</mat-label>
+                <input required autofocus type="text" name="title" matInput placeholder="Enter title" [(ngModel)] = "category.title" maxlength="255">
+            </mat-form-field>
+
+            <mat-form-field class="w60" appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea required name="description" matInput placeholder="Enter description. Max Length of characters is 255." rows="5" [(ngModel)] = "category.description" maxlength="255"></textarea>
+            </mat-form-field>
+
+            <div class="container text-center m_t20">
+                <button mat-raised-button color="primary">Add</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

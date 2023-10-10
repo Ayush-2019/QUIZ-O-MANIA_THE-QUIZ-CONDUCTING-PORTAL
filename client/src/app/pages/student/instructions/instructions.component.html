@@ -1,0 +1,45 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <mat-card class="m_t20">
+                    <mat-card-header>
+                        <mat-card-title>
+                            Read the quiz instructions properly
+                        </mat-card-title>
+                    </mat-card-header>
+
+                    <mat-divider></mat-divider>
+
+                    <mat-card-content style="margin-top: 10px;">
+
+
+                        <h2>{{quiz.title}}</h2>
+                        <p>{{quiz.description}}</p>
+
+                        <mat-divider></mat-divider>
+
+                        <h2>Instructions:</h2>
+
+                        <ul>
+                            <li>All questions are MCQ type.</li>
+                            <li>Complete this quiz within specified time</li>
+                            <li>Quiz will be evaluated as soon as you submit it</li>
+                            <li>Maximum time to Complete the quiz is <b>{{quiz.totalquestions*3}} minutes</b></li>
+                            <li> The quiz has total <b>{{quiz.totalquestions}} questions</b></li>
+                            <li>Maximum marks of this quiz is <b>{{quiz.maxMarks}} marks</b></li>
+                            <li>There is no negative marking.</li>
+                        </ul>
+
+                    </mat-card-content>
+
+                    <mat-card-actions style="margin-left: 40%;">
+                        <button (click)="start_quiz()" mat-raised-button color="primary"> Start Quiz</button>
+                    </mat-card-actions>
+                </mat-card>
+
+            </div>
+        </div>
+    </div>
+</div>

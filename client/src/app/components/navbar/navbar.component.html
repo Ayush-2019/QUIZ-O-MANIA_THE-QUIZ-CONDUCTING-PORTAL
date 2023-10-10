@@ -1,0 +1,23 @@
+<div class="bootstrap-wrapper">
+  <mat-toolbar color="primary">
+    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+     <mat-icon>home</mat-icon>
+    </a>
+   <span>PARIKSHA</span>
+   <span class="example-spacer"></span>
+   <a *ngIf="!isLogin" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    Login
+   </a>
+   <a *ngIf="!isLogin" [routerLink]="'/signup'" mat-icon-button class="example-icon m_l20" aria-label="Example icon-button with share icon">
+    Register
+   </a>
+
+   <button [routerLink]="user.authorities[0].authority == 'ADMIN' ? '/admin' : '/user-dashboard'" mat-icon-button *ngIf="isLogin && user" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" title="Dashboard">
+    <mat-icon>account_circle</mat-icon>
+   </button>
+
+   <button mat-icon-button (click)="logout()" *ngIf="isLogin" mat-icon-button class="example-icon m_r0" aria-label="Example icon-button with share icon" title="Logout">
+    <mat-icon>logout</mat-icon>
+   </button>
+ </mat-toolbar>
+</div>
