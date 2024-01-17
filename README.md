@@ -1,3 +1,5 @@
+Application Succesfully Deployed: https://quizomania-23b0a.web.app/
+
 # QUIZ-O-MANIA_THE-QUIZ-CONDUCTING-PORTAL
 
 The demonstration video for this project is here:- https://drive.google.com/file/d/1ShlnGv1n6X57-45u1x3_0noM9kGZ7P-Q/view?usp=sharing
