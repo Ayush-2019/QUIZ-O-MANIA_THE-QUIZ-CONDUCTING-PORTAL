@@ -19,9 +19,9 @@ e)Catgory table to store details of categories <br/>
 f) Questions table to store questions of all quiz <br/>
 g) Results table to store results of students who attempted the quiz<br/>
 
-Various REST api's are developed using Java, Spring Boot and Hibernate. These api's are called from the frontend as various GET, POST, PATCH, DELETE requests.<br/>
+Various REST api's are developed leveraging Java, Spring Boot and Hibernate, which are consumed via client side as various GET, POST, PATCH, DELETE requests.<br/>
 
-User passwords are encrypted using Bcrypt Password Encoder and Jsonwebtoken generates the token to let only the genuine user login.<br/>
+Spring Security is incorporated throughout the application and user passwords are encrypted using Bcrypt Password Encoder and Jsonwebtoken generates the token to let only the genuine user login.<br/>
 
 Angular is used for client side development. The UI is made appealing using various Angular Material components, such as mat-raised button, mat-form-field, mat-slide-toggle etc.<br/>
 
